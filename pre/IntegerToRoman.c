@@ -1,51 +1,52 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main(){
 	int num;
-	printf("enter a number: ");
-	scanf("%d",&num);
+	cout<<"enter a nuber"<<endl;
+	cin>>num;
 	
 	while(num>0){
 		if(num>=1000){
-		printf("M");
+			cout<<"M";
 		num=num-1000;
 		}
 		else if(num>=900){
-			printf("CM");
+			cout<<"CM";
 			num-=900;
 		}
 		else if(num>=500){
-			printf("D");
+			cout<<"D";
 			num-=500;
 		}else if(num>=400){
-			printf("CD");
+			cout<<"CD";
 			num-=400;
 		}else if(num>=100){
-			printf("C");
+			cout<<"C";
 			num-=100;
 		}else if(num>=90){
-			printf("XC");
+			cout<<"XC";
 			num-=90;
 		}else if(num>=50){
-			printf("L");
+			cout<<"L";
 			num-=50;
 		}else if(num>=40){
-			printf("LX");
+			cout<<"LX";
 			num-=40;
 		}else if(num>=10){
-			printf("X");
+			cout<<"X";
 			num-=10;
 		}else if(num>=9){
-			printf("IX");
+			cout<<"IX";
 			num-=9;
 		}else if(num>=5){
-			printf("V");
+			cout<<"V";
 			num-=5;
 		}
 		else if(num>=4){
-			printf("IV");
+			cout<<"IV";
 			num-=4;
 		}else{
-			printf("I");
+			cout<<"I";
 			num-=1;
 		}
 	}
