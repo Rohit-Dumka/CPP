@@ -23,6 +23,7 @@ int getMax(int num[],int n){
 
 int main(){
 	int size;
+	//input size
 	cin>>size;
 
 	int num[100];
