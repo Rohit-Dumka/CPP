@@ -31,6 +31,7 @@ int main(){
 	for(int i=0;i<size;i++){
 		cin>>num[i];
 	}
+	//max and min elements
 	cout<<"max vlaue is : "<<getMax(num,size)<<endl;
 	cout<<"min vlaue is : "<<getMin(num,size)<<endl;
 }
