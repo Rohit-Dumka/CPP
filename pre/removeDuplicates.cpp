@@ -1,3 +1,4 @@
+//warning: this code will work only on sorted array !!!!
 #include<iostream>
 using namespace std;
     int removeDuplicates(int nums[]) {
