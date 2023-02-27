@@ -7,16 +7,13 @@ void reverse(int arr[],int n){
 //cpp has direct function to swap elements ,we can use it to save our time :)
 	while(start<=end){
 		swap(arr[start],arr[end]);
-		start++;
-		end--;
+		start++,end--;
 	}
 }
 
-
 void printArray(int arr[],int n){
-	for(int i=0;i<n;i++){
+	for(int i=0;i<n;i++)
 		cout<<arr[i]<<" ";
-	}
 	cout<<endl;
 }
 
@@ -30,6 +27,7 @@ int main(){
 	
 	reverse(arr,6);
 	reverse(brr,5);
+	
 	cout<<"reversed arrays: "<<endl;
 	printArray(arr,6);
 	printArray(brr,5);
