@@ -19,11 +19,11 @@ int main(){
 	int even[8]={4,5,7,8,11,9,0,-3};
 	int odd[5]={11,22,9,33,8};
 
-	s(even,8);
-	print(even,8);
+	s(even,8);//swap done 
+	print(even,8);//printing the swapped array(even)
 
 	cout<<endl;
 
-	s(odd,5);
-	print(odd,5);
+	s(odd,5);//swap done
+	print(odd,5);//printing the swapped array(odd)
 }
