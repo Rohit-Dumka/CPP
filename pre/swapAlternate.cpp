@@ -1,3 +1,6 @@
+//the below program swap the alternate elements present in array
+//ex : let we have 1,3,4,7 total four elements then after swapping(alternate) the array will be-
+// 3,1,7,4 
 #include<iostream>
 using namespace std;
 
