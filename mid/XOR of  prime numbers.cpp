@@ -25,3 +25,4 @@ int main(){
 	cout<<x;
 }
 
+//this problem is from coding evaluation test held in our university....
