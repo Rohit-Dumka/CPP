@@ -1,0 +1,26 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+vector<int>a{1,2,3,4,5,6};
+vector<int>b{3,4,5,8,9};
+vector<int>u;
+
+for(int i=0;i<a.size();i++){
+    u.push_back(a[i]);
+}
+
+int k=u.size();
+
+for(int i=0;i<b.size();i++){
+    for(int j=0;j<k;j++){
+        if(b[i]==u[j])
+            b[i]=INT_MIN;
+    }
+    if(b[i]!=INT_MIN)
+        u.push_back(b[i]);
+}
+
+for(auto ans:u)
+    cout<<ans<<" ";
+}
