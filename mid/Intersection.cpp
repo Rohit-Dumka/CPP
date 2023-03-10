@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 vector<int>a{1,2,3,4,5,6};//first set 
 vector<int>b{3,4,5,8,9};//second set
-vector<int>u;//union of both a and b
+vector<int>u;//union of both set a and set b
 
 for(int i=0;i<a.size();i++){
     u.push_back(a[i]);
