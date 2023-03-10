@@ -27,5 +27,5 @@ for(int i=0;i<b.size();i++){
 cout<<"union is : "<<endl;
     
 for(auto ans:u)
-    cout<<ans<<" ";
+cout<<ans<<" ";
 }
