@@ -20,6 +20,7 @@ for(int i=0;i<b.size();i++){
     if(b[i]!=INT_MIN)
         u.push_back(b[i]);
 }
+    
 cout<<"union is : "<<endl;
 for(auto ans:u)
     cout<<ans<<" ";
