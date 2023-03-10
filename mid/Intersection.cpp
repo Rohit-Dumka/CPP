@@ -2,9 +2,9 @@
 #include<vector>
 using namespace std;
 int main(){
-vector<int>a{1,2,3,4,5,6};
-vector<int>b{3,4,5,8,9};
-vector<int>u;
+vector<int>a{1,2,3,4,5,6};//first set 
+vector<int>b{3,4,5,8,9};//second set
+vector<int>u;//union of both a and b
 
 for(int i=0;i<a.size();i++){
     u.push_back(a[i]);
