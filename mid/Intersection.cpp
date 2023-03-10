@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
+//vector => Dynamic Array
 vector<int>a{1,2,3,4,5,6};//first set 
 vector<int>b{3,4,5,8,9};//second set
 vector<int>u;//union of both set a and set b
