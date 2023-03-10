@@ -9,7 +9,8 @@ vector<int>u;//union of both set a and set b
 for(int i=0;i<a.size();i++){
     u.push_back(a[i]);
 }
-
+//as set is a collection of unique elements 
+    
 int k=u.size();
 
 for(int i=0;i<b.size();i++){
