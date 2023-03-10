@@ -11,6 +11,7 @@ for(int i=0;i<a.size();i++){
 }
 //as set is a collection of unique elements therefore no need to 
 //search for duplicate elements in tbe same set
+
 int k=u.size();
 
 for(int i=0;i<b.size();i++){
