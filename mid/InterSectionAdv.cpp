@@ -2,9 +2,10 @@
 #include<vector>//to use vector
 #include<algorithm>//to perform sorting
 using namespace std;
+
 int main(){
-vector<int>a{1,2,3,3,4,5,1,5};
-vector<int>b{3,3,5,4,4,5,6};
+vector<int>a{1,2,3,3,4,5,1,5}; //first array
+vector<int>b{3,3,5,4,4,5,6}; //second array
 
 vector<int>ans;
 sort(a.begin(),a.end());
