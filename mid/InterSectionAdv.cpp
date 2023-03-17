@@ -11,7 +11,8 @@ vector<int>ans;
 sort(a.begin(),a.end());
 sort(b.begin(),b.end());
 
-for(int i=0;i<a.size();i++){
+for(int i=0;i<a.size();i++)
+   {
         if(i>1 && a[i-1]==a[i]){//for dups in a
             continue;
         }
