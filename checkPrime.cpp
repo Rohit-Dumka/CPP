@@ -15,7 +15,6 @@ bool isPrime(int n){
 	//1 => prime 
 }
 
-
 int main(){
 	int n;
 	cout<<"enter a number"<<endl;
