@@ -20,6 +20,7 @@ void merge(int a[],int b[],int asize,int bsize)
 		else
 		c[k++]=a[i++];
 	}
+	//to store the rest of the elements--
 	while(i<asize)
 	{
 		c[k++]=a[i++];
