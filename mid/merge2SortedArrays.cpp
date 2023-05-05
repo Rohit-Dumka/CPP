@@ -12,7 +12,6 @@ void print(int a[],int s)
 void merge(int a[],int b[],int asize,int bsize)
 {
 	int c[11],k=0,i=0,j=0;
-	
 	while(i<asize && j<bsize)
 	{
 		if(b[j]<a[i])
