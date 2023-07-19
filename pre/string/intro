@@ -1,7 +1,58 @@
 //C style strings:
 int main()
 {
-  char str[]="rohit"; // g f g \0
+  char str[]="gfg"; //when we use double quotes ,compiler auto puts a '\0' at the end : [g f g \0]
+//sizeof(str)=4 ,coz extra \0 at the end 
+//if we give size as well then : char str[6]="gfg";  then -> [ g f g \0 \0 \0 , but works same
   cout<<str;
   return 0;
 }
+
+
+int main()
+{
+char str[] ={'g','f','g'};
+cout<<str;
+//out-> gfg then garbage,or segmentation fault etc, coz compiler will look for \0 
+//so better put \0 at the end : char str[] ={'g','f','g','\0'}
+}
+
+functions -
+strlen(str)
+strcmp(s1,s2) : compare both strings lexicograhically
+ex :
+char s1[]="abc", s2[]="bcd";
+int ans=strcmp(s1,s2);
+if(ans>0)
+  cout<<"greater";
+else if(ans==0)
+  cout<<"equal";
+else
+  cout<<"smaller";
+
+out: smaller ,coz abc is small
+if s1: gfg
+out: greater,coz g>a;
+if s1=bcd 
+out: equall , coz both are same 
+
+
+strcpy(s1,s2);
+
+char str[5];
+str="gfg"; //error
+we can't  assign a string later in  this way if i have created a string and didn't init at same time.
+to resolve this ,strcpy() is there.
+now : 
+
+char str[5];
+strcpy(str,"gfg"); //no error
+so , we can use strcpy() to assign strings to uninitialized character array.
+
+
+
+
+//C++ string 
+-can assign a string later
+string str;
+str="gfg";
