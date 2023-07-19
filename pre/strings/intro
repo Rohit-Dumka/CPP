@@ -1,7 +1,0 @@
-//C style strings:
-int main()
-{
-  char str[]="rohit"; // g f g \0
-  cout<<str;
-  return 0;
-}
