@@ -23,3 +23,23 @@ int main() {
             cout<<a[i]<<" ";
     }
 }
+
+
+//method 2-----------------------
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a[]={7,10,4,3,6,5,2};
+    int n=sizeof(a)/sizeof(int);
+    int leader=a[n-1];
+    cout<<leader<<" ";
+    for(int i=n-2;i>=0;i--)
+    {
+        if(leader<a[i])
+        {
+            leader=a[i];
+            cout<<leader<<" ";
+        }
+    }
+}
