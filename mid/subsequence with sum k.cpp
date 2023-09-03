@@ -1,3 +1,4 @@
+//print first subsequence with sum k
 #include <bits/stdc++.h>
 using namespace std;
 bool print(int i,vector<int>&a,int s,int sum,int arr[],int n){
