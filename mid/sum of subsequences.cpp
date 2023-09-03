@@ -1,4 +1,4 @@
-//print subsequences whose sum is k
+//print all subsequences whose sum is k
 #include <bits/stdc++.h>
 using namespace std;
 void print(int i,vector<int>&a,int s,int sum,int arr[],int n){
