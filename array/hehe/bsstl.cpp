@@ -16,3 +16,6 @@ public:
         return {l,-1};
     }
 };
+
+//largest num smaller than x
+//lbound --;
