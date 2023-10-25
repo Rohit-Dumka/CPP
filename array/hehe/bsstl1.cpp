@@ -1,3 +1,5 @@
+//Check if X exists in the sorted array or not?
+
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
