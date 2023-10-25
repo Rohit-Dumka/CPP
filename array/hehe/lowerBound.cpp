@@ -6,7 +6,8 @@ int main() {
    //syntax : lower_bound(first iterator,last iterator , element) -a.begin;
 
    int ind=lower_bound(a,a+n,4)-a;
-   //returns the index where 4 is present in array
+   //returns the iterator which points to where 4 is present in array
+   //to get the index you have to subtract the first iterator always
    cout<<"index of 4: "<<ind;
 
    //since the element isn't present therefore it returns the index of element which  immidiatily points to the next greater element of 7 , i.e. 9
