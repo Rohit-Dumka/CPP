@@ -1,6 +1,7 @@
 //reverse an array:
 //2 variables change
 //single variable change
+//string palindrome check
 
 #include <iostream>
 #include <vector>
@@ -58,4 +59,21 @@ int main() {
     cout<<"after: reverse"<<endl;
     print(a);
     
+}
+
+//string palindrome
+
+#include<iostream>
+using namespace std;
+bool f(string s,int i){
+    if(i>=s.size()/2) return true;
+    
+    if(s[i]!=s[s.size()-i-1]) return false;
+    return f(s,i+1);
+}
+int main(){
+    string s;
+    cout<<"enter string: ";
+    cin>>s;
+    cout<<f(s,0);
 }
