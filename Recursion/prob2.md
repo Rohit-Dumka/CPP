@@ -6,7 +6,6 @@
 //1
 ```
 #include<iostream>
-#include<iostream>
 using namespace std;
 int f(int n){
     if(n<=1)return n;
@@ -16,8 +15,7 @@ int f(int n){
 int main(){
     int n;
     cin>>n;
-    int ans=f(n);
-    cout<<ans;
+    cout<<f(n);
 }
 ```
 
