@@ -1,6 +1,8 @@
 - print sum 1 to n : functional(where function returns answer)
 
-- print sum 1 to n : parametrised 
+- print sum 1 to n : parametrised
+  
+- find Factorial of a number
 
 ![image](https://github.com/Rohit-Dumka/CPP/assets/96404582/d0708a1c-0046-450b-87a0-a8f0786ec37d)
 //1
@@ -38,5 +40,22 @@ int main(){
     int n;
     cin>>n;
     print(n,0);
+}
+```
+
+//3
+```
+#include<iostream>
+#include<iostream>
+using namespace std;
+int f(int n){
+    if(n==1)return 1;
+    
+    return n*f(n-1);
+}
+int main(){
+    int n;
+    cin>>n;
+    cout<<f(n);
 }
 ```
