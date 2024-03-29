@@ -1,3 +1,5 @@
+//Merge Sort
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -35,4 +37,35 @@ int main(){
     for(int i:a){
         cout<<i<<" ";
     }
+}
+
+//Quick Sort
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int q(vector<int>&a,int l,int h){
+    int p=l;
+    int i=l,j=h;
+    while(i<j){
+        while(a[i]<=a[p] && i<=h)i++;
+        while(a[j]>a[p] && j>=l) j--;
+        if(i<j) swap(a[i],a[j]);
+    }
+    swap(a[j],a[p]);
+    
+    return j;
+}
+void qs(vector<int>&a,int l,int h){
+    if(l<h){
+        int p=q(a,l,h);
+        qs(a,l,p-1);
+        qs(a,p+1,h);
+    }
+}
+int main(){
+    vector<int>a{8,4,1,3,5,7,2};
+    qs(a,0,6);
+    
+    for(int i:a) cout<<i<<" ";
 }
