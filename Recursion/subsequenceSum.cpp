@@ -1,7 +1,7 @@
 //1. brutforce
 //2. optimised
 //3. first subsequence with sum k
-
+//4. find no of subsequences with sum k
 
 //1
 #include <iostream>
@@ -121,4 +121,37 @@ int main() {
     }
     cout<<endl;
     f(a,0,temp,0,k);
+}
+
+
+//4
+#include <iostream>
+#include<vector>
+using namespace std;
+int f(vector<int>a,int i,int sum,int k){
+    if(i==a.size()){
+        if(sum==k) return 1;
+        else return 0;
+    }
+    sum+=a[i];
+    int l=f(a,i+1,sum,k);
+    sum-=a[i];
+    int r=f(a,i+1,sum,k);
+    
+    return l+r;
+}
+int main() {
+    int n,x,k,sum=0;
+    cout<<"enter size: ";
+    cin>>n;
+    cout<<"enter k: ";
+    cin>>k;
+    cout<<"enter elements: ";
+    vector<int>a;
+    for(int i=0;i<n;i++){
+        cin>>x;
+        a.push_back(x);
+    }
+    cout<<endl;
+    cout<<f(a,0,0,k);
 }
